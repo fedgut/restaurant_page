@@ -1,6 +1,7 @@
-const main = document.getElementById('content');
-function verify() {
-  main.innerText = 'main.js is loading properly';
-  return 'nice';
-}
-verify();
+import * as elMngr from './elementManager';
+
+const navMenu = ['Home', 'About', 'Menu'];
+const mainDiv = document.getElementById('content');
+
+mainDiv.appendChild(elMngr.listCreator('nav-list', navMenu));
+mainDiv.appendChild(elMngr.elemental('img', 'src', 'pujol.jpg'));
