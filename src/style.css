@@ -8,6 +8,10 @@ img {
   object-fit: cover;
 }
 
+p {
+  padding-left: 1.1rem;
+}
+
 #nav-list {
   display: flex;
   flex-direction: row;
@@ -32,4 +36,15 @@ button {
 #mutating-div {
   max-width: 900px;
   margin: auto;
+}
+
+#menu-handler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-container {
+  margin: 0 1rem 0 1rem;
+  display: inline;
 }
