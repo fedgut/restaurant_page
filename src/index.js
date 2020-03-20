@@ -18,9 +18,9 @@ const changes = 'mutating-div';
   -price
 */
 const menuItems = [
-  ['Chiken sandwich', 'Bread', 'Chicken', 'Tomatoes', 'Love', '$4,33'],
-  ['Tuna sandwich', 'Bread', 'Tuna', 'Onions', 'Hate', '$3,50'],
-  ['Cheeseburger', 'Cheese', 'Burger', '$13,50'],
+  ['Chiken sandwich', 'Bread', 'Chicken', 'Tomatoes', 'Love', '$4.33'],
+  ['Tuna sandwich', 'Bread', 'Tuna', 'Onions', 'Hate', '$3.50'],
+  ['Cheeseburger', 'Cheese', 'Burger', '$13.50'],
 ];
 
 startUp(navMenu, navItem, mainDiv, image, changes);
