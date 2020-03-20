@@ -1,3 +1,5 @@
+import pujol from './pujol.jpg';
+
 function elemental(type, property, value) {
   const element = document.createElement(type);
   element[property] = value;
@@ -15,8 +17,12 @@ function listCreator(target, [...args]) {
 }
 
 const startUp = () => {
+  const navMenu = ['Home', 'Enviroment', 'Menu'];
   const mainDiv = document.getElementById('content');
-  let image = document.elemental('img', 'src', 'src/pujol.jpg');
+
+  mainDiv.appendChild(elemental('img', 'src', pujol));
+  mainDiv.appendChild(listCreator('nav-list', navMenu));
+  mainDiv.appendChild(elemental('div', 'id', 'mutating'));
 };
 
 export { elemental, listCreator, startUp };
