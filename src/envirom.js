@@ -1,10 +1,6 @@
-// import * as elMngr from './elementManager';
-
-const envir = (target) => {
-  const baseNode = document.getElementById(target);
-  const copy = '\nwe care about the enviroment!\n';
-
-  baseNode.innerHTML = copy;
+const envirom = (target) => {
+  const copy = '22222222';
+  document.getElementById(target).appendChild(document.createTextNode(copy));
 };
 
-export { envir as default };
+export { envirom as default };
