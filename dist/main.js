@@ -90,11 +90,11 @@
 /*!*******************************!*\
   !*** ./src/elementManager.js ***!
   \*******************************/
-/*! exports provided: elemental, listCreator */
+/*! exports provided: elemental, listCreator, startUp */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"elemental\", function() { return elemental; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"listCreator\", function() { return listCreator; });\nfunction elemental(type, property, value) {\n  const element = document.createElement(type);\n  element[property] = value;\n  return element;\n}\n\nfunction listCreator(target, [...args]) {\n  const list = elemental('ul', 'id', target);\n  args.forEach(x => {\n    const node = document.createElement('li');\n    node.appendChild(document.createTextNode(x));\n    list.appendChild(node);\n  });\n  return list;\n}\n\n\n\n\n//# sourceURL=webpack:///./src/elementManager.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"elemental\", function() { return elemental; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"listCreator\", function() { return listCreator; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"startUp\", function() { return startUp; });\nfunction elemental(type, property, value) {\n  const element = document.createElement(type);\n  element[property] = value;\n  return element;\n}\n\nfunction listCreator(target, [...args]) {\n  const list = elemental('ul', 'id', target);\n  args.forEach((x) => {\n    const node = elemental('li', 'id', x);\n    node.appendChild(document.createTextNode(x));\n    list.appendChild(node);\n  });\n  return list;\n}\n\nconst startUp = () => {\n  const mainDiv = document.getElementById('content');\n  let image = document.elemental('img', 'src', 'src/pujol.jpg');\n};\n\n\n\n\n//# sourceURL=webpack:///./src/elementManager.js?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elementManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elementManager */ \"./src/elementManager.js\");\n\n\nconst navMenu = ['Home', 'About', 'Menu'];\nconst mainDiv = document.getElementById('content');\n\nmainDiv.appendChild(_elementManager__WEBPACK_IMPORTED_MODULE_0__[\"listCreator\"]('nav-list', navMenu));\nmainDiv.appendChild(_elementManager__WEBPACK_IMPORTED_MODULE_0__[\"elemental\"]('img', 'src', 'pujol.jpg'));\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elementManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elementManager */ \"./src/elementManager.js\");\n/* harmony import */ var _pujol_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pujol.jpg */ \"./src/pujol.jpg\");\n\n\n\nconst navMenu = ['Home', 'Enviroment', 'Menu'];\nconst mainDiv = document.getElementById('content');\n\nmainDiv.appendChild(_elementManager__WEBPACK_IMPORTED_MODULE_0__[\"elemental\"]('img', 'src', _pujol_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]));\nmainDiv.appendChild(_elementManager__WEBPACK_IMPORTED_MODULE_0__[\"listCreator\"]('nav-list', navMenu));\nmainDiv.appendChild(_elementManager__WEBPACK_IMPORTED_MODULE_0__[\"elemental\"]('div', 'id', 'mutating'));\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pujol.jpg":
+/*!***********************!*\
+  !*** ./src/pujol.jpg ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"abbc2128b229a7c73c57ff6ac0d73caa.jpg\");\n\n//# sourceURL=webpack:///./src/pujol.jpg?");
 
 /***/ })
 
