@@ -1,9 +1,10 @@
 import * as elMngr from './elementManager';
 import startUp from './startUp';
-import image from './pujol.jpg';
+import image from './burger2.png';
 import home from './home';
 import enviroment from './envirom';
 import menu from './menu';
+import './style.css';
 
 const navMenu = ['Home', 'Enviroment', 'Menu'];
 const navItem = ['nav', 'button'];
