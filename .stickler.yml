@@ -7,7 +7,7 @@ linters:
 # add the files here you want to be ignored by stylelint
 files:
   ignore:
-      - 'dist/*',
+      - 'dist/*'
       - 'node_modules/*'
 
 # PLEASE DO NOT enable auto fixing options
